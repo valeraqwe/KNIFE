@@ -1,0 +1,24 @@
+.circle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Размер кружка */
+    height: 50px; /* Размер кружка */
+    background-color: #000;
+    border-radius: 50%;
+    margin-bottom: 8px; /* Отступ между кружком и текстом */
+}
+
+.circle img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+li.relative {
+    position: relative;
+    margin-bottom: 20px; /* Отступ между элементами списка */
+}
