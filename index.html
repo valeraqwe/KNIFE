@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.js">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -172,8 +171,6 @@
         </button>
     </div>
 
-
-
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-2xl font-bold mb-4 text-center">Відгуки покупців</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -323,4 +320,27 @@
 
 </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    const carousel = document.querySelector('.carousel');
+    const carouselInner = document.querySelector('.carousel-inner');
+    const carouselPrev = document.querySelector('.carousel-prev');
+    const carouselNext = document.querySelector('.carousel-next');
+    const slideWidth = carouselInner.clientWidth;
+    let currentSlide = 0;
+
+    carouselPrev.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+    });
+
+    carouselNext.addEventListener('click', () => {
+        if (currentSlide < carouselInner.children.length - 1) {
+            currentSlide++;
+            carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+    });
+</script>
 </html>
