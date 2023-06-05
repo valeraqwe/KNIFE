@@ -3,8 +3,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Размер кружка */
-    height: 50px; /* Размер кружка */
+    width: 100px; /* Размер кружка */
+    height: 100px; /* Размер кружка */
     background-color: #000;
     border-radius: 50%;
     margin-bottom: 8px; /* Отступ между кружком и текстом */
