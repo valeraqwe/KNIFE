@@ -164,10 +164,10 @@
             </div>
         </div>
         <button class="carousel-prev absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-1 bg-gray-200 rounded-full shadow-md">
-            <
+            &lt;
         </button>
         <button class="carousel-next absolute top-1/2 right-0 transform -translate-y-1/2 px-2 py-1 bg-gray-200 rounded-full shadow-md">
-            >
+            &gt;
         </button>
     </div>
 
@@ -326,21 +326,50 @@
     const carouselInner = document.querySelector('.carousel-inner');
     const carouselPrev = document.querySelector('.carousel-prev');
     const carouselNext = document.querySelector('.carousel-next');
-    const slideWidth = carouselInner.clientWidth;
     let currentSlide = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     carouselPrev.addEventListener('click', () => {
         if (currentSlide > 0) {
             currentSlide--;
-            carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            updateSlide();
         }
     });
 
     carouselNext.addEventListener('click', () => {
         if (currentSlide < carouselInner.children.length - 1) {
             currentSlide++;
-            carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            updateSlide();
         }
     });
+
+    carousel.addEventListener('touchstart', (event) => {
+        touchStartX = event.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchend', (event) => {
+        touchEndX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            if (currentSlide < carouselInner.children.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        } else if (touchEndX > touchStartX) {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+    }
+
+    function updateSlide() {
+        const slideWidth = carouselInner.clientWidth;
+        carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
 </script>
 </html>
