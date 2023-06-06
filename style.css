@@ -24,7 +24,24 @@ li.relative {
 }
 
 .cost-delivery-list {
-    border: none;
+    display: flex;
+    justify-content: center;
 }
+
+.cost-delivery-list > div {
+    border: none;
+    box-shadow: none;
+    background-color: #FFFFFF;
+    border-radius: 8px 8px 0 0;
+}
+
+.cost-delivery-list > div:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.cost-delivery-list > div:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
 
 
