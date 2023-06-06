@@ -145,7 +145,7 @@
     </section>
     <div class="flex justify-center mb-8 mt-8 ml-8 mr-8">
         <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-6 px-12 rounded focus:outline-none focus:shadow-outline w-full"
-                onclick="redirectToForm()" type="button">Зробити замовлення
+                onclick="scrollToForm()" type="button">Зробити замовлення
         </button>
     </div>
 
@@ -304,7 +304,7 @@
         <form class="max-w-4xl mx-auto">
             <div class="flex justify-center mb-8 mt-8 ml-8 mr-8">
                 <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-6 px-12 rounded focus:outline-none focus:shadow-outline w-full"
-                        onclick="redirectToForm()" type="button">Зробити замовлення
+                        onclick="scrollToForm()" type="button">Зробити замовлення
                 </button>
             </div>
             <div class="flex justify-center">
@@ -391,8 +391,9 @@
         carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
     }
 
-    function redirectToForm() {
-        window.location.href = '#orderForm';
+    function scrollToForm() {
+        const form = document.getElementById('orderForm');
+        form.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 </html>
