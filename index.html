@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <title>ФІРМОВИЙ НІМЕЦЬКИЙ РУЧНИЙ МІКСЕР</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thanks.html">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body>
 <div class="min-h-screen flex flex-col">
@@ -19,7 +19,7 @@
             <span class="text-black text-opacity-75">сучасна техніка з гарантією <span
                     class="text-red-500">2 роки</span></span>
         </h2>
-        <img src="bbq.webp" alt="Barbecue Kits" class="block mx-auto max-w-full h-auto">
+        <img src="images/bbq.webp" alt="Barbecue Kits" class="block mx-auto max-w-full h-auto">
     </header>
 
     <!-- Блок Ціни та Знижки -->
@@ -45,29 +45,29 @@
 
     <!-- Форма для замовлення -->
     <div class="container mx-auto mt-6">
-        <form id="orderForm" class="max-w-4xl mx-auto">
+        <form id="orderForm" class="max-w-4xl mx-auto" onsubmit="return validateForm(event)">
             <div class="mb-6 ml-8 mr-8">
                 <label for="name"></label>
                 <input class="appearance-none border rounded w-full py-6 px-8 text-gray-700 placeholder-black leading-tight focus:outline-none focus:shadow-outline"
-                       id="name" type="text" placeholder="Введіть ваше ім'я">
+                       id="name" type="text" placeholder="Введіть ваше ім'я" required>
             </div>
             <div class="mb-0 ml-8 mr-8">
                 <label for="phone"></label>
                 <input class="appearance-none border rounded w-full py-6 px-8 text-gray-700 placeholder-black leading-tight focus:outline-none focus:shadow-outline"
-                       id="phone" type="tel" placeholder="Введіть номер телефону">
+                       id="phone" type="tel" placeholder="Введіть номер телефону" required>
             </div>
             <div class="flex justify-center mt-8 ml-8 mr-8">
                 <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-6 px-12 rounded focus:outline-none focus:shadow-outline w-full text-xl"
-                        type="button">Зробити замовлення
+                        type="submit">Зробити замовлення
                 </button>
-
             </div>
             <div class="flex justify-center items-center mb-2 mt-5">
-                <img src="klass.png" alt="Иконка" class="mr-2 h-7">
+                <img src="images/klass.png" alt="Иконка" class="mr-2 h-7">
                 <p class="mb-2 text-gray-666">Якість підтверджено</p>
             </div>
         </form>
     </div>
+
 
     <!-- Блок з причинами -->
     <div class="container mx-auto px-4 py-8 text-center">
@@ -75,7 +75,7 @@
         <ul class="list-none pl-0">
             <li class="relative">
                 <div class="circle">
-                    <img src="kolbaski.png" alt="Картинка"/>
+                    <img src="images/kolbaski.png" alt="Картинка"/>
                 </div>
                 <br>
                 <span class="font-bold">Точність та якість різання.</span><br>Наші ножі забезпечують неймовірну точність
@@ -84,7 +84,7 @@
             </li>
             <li class="relative">
                 <div class="circle">
-                    <img src="kolbaski.png" alt="Картинка"/>
+                    <img src="images/kolbaski.png" alt="Картинка"/>
                 </div>
                 <br>
                 <span class="font-bold">Довговічність та міцність.</span><br>Виготовлені з високоякісних матеріалів,
@@ -93,7 +93,7 @@
             </li>
             <li class="relative">
                 <div class="circle">
-                    <img src="kolbaski.png" alt="Картинка"/>
+                    <img src="images/kolbaski.png" alt="Картинка"/>
                 </div>
                 <br>
                 <span class="font-bold">Зручність використання.</span><br>Наші ножі мають зручні ручки та оптимальну
@@ -127,22 +127,22 @@
         <ul class="list_4">
             <li>
                 <div class="text">
-                    <img src="qwe.jpg">
+                    <img src="images/qwe.jpg">
                 </div>
             </li>
             <li>
                 <div class="text">
-                    <img src="qwe2.jpg">
+                    <img src="images/qwe2.jpg">
                 </div>
             </li>
             <li>
                 <div class="text">
-                    <img src="img_1.png">
+                    <img src="images/img_1.png">
                 </div>
             </li>
             <li>
                 <div class="text">
-                    <img src="qwe3.jpg">
+                    <img src="images/qwe3.jpg">
                 </div>
             </li>
         </ul>
@@ -154,7 +154,7 @@
     </div>
 
     <div class="flex justify-center items-center">
-        <img src="klass.png" alt="Иконка" class="mr-2 h-7">
+        <img src="images/klass.png" alt="Иконка" class="mr-2 h-7">
         <p class="mb-2 text-gray-666">Якість підтверджено</p>
     </div>
 
@@ -176,16 +176,16 @@
     <div class="carousel relative overflow-hidden">
         <div class="carousel-inner flex transition-transform duration-500 ease-in-out">
             <div class="carousel-slide w-full flex-shrink-0">
-                <img src="image%202.png" alt="Photo 1" class="w-full h-auto rounded-lg">
+                <img src="images/image%202.png" alt="Photo 1" class="w-full h-auto rounded-lg">
             </div>
             <div class="carousel-slide w-full flex-shrink-0">
-                <img src="naborbbq2.png" alt="Photo 2" class="w-full h-auto rounded-lg">
+                <img src="images/naborbbq2.png" alt="Photo 2" class="w-full h-auto rounded-lg">
             </div>
             <div class="carousel-slide w-full flex-shrink-0">
-                <img src="image%201.png" alt="Photo 3" class="w-full h-auto rounded-lg">
+                <img src="images/image%201.png" alt="Photo 3" class="w-full h-auto rounded-lg">
             </div>
             <div class="carousel-slide w-full flex-shrink-0">
-                <img src="img.png" alt="Photo 4" class="w-full h-auto rounded-lg">
+                <img src="images/img.png" alt="Photo 4" class="w-full h-auto rounded-lg">
             </div>
         </div>
         <button class="carousel-prev absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-1 bg-gray-200 rounded-full shadow-md">
@@ -201,11 +201,11 @@
         </div>
         <div class="cost-delivery-list">
             <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center ml-4 wider-left">
-                <img src="logo_ukrposhta.png" alt="Ukrposhta Logo" class="w-24 h-auto mb-6">
+                <img src="images/logo_ukrposhta.png" alt="Ukrposhta Logo" class="w-24 h-auto mb-6">
                 <h3 class="text-xl font-semibold mb-2">3-6 днів</h3>
             </div>
             <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center mr-4 wider-right">
-                <img src="logo_novaposhta.png" alt="Nova Poshta Logo" class="w-24 h-auto mb-6">
+                <img src="images/logo_novaposhta.png" alt="Nova Poshta Logo" class="w-24 h-auto mb-6">
                 <h3 class="text-xl font-semibold mb-2">1-2 днів</h3>
             </div>
         </div>
@@ -219,7 +219,7 @@
             <div class="bg-white rounded-lg p-4">
                 <div class="flex flex-col">
                     <div class="flex items-center">
-                        <img class="w-8 h-8 rounded-full mr-2" src="ivan.png" alt="Аватар Івана">
+                        <img class="w-8 h-8 rounded-full mr-2" src="images/ivan.png" alt="Аватар Івана">
                         <span class="font-bold">Іван</span>
                     </div>
                     <span class="text-yellow-500 mb-2">⭐️⭐️⭐️⭐️⭐️</span>
@@ -234,7 +234,7 @@
             <div class="bg-white rounded-lg p-4">
                 <div class="flex flex-col">
                     <div class="flex items-center">
-                        <img class="w-8 h-8 rounded-full mr-2" src="olena3.png" alt="Аватар Олени">
+                        <img class="w-8 h-8 rounded-full mr-2" src="images/olena3.png" alt="Аватар Олени">
                         <span class="font-bold">Олена</span>
                     </div>
                     <span class="text-yellow-500 mb-2">⭐️⭐️⭐️⭐️⭐️</span>
@@ -242,14 +242,14 @@
                 <p class="text-gray-700">Набір ножів барбекю - це просто відмінність! Легкі в руці, зручні
                     використовувати і дуже гострі.</p>
                 <div class="text-gray-500 mt-2">Місто: Львів</div>
-                <div class="text-gray-500">Написано 5 днів тому</div>
+              images/  <div class="text-gray-500">Написано 5 днів тому</div>
             </div>
 
             <!-- Отзыв 3 -->
             <div class="bg-white rounded-lg p-4">
                 <div class="flex flex-col">
                     <div class="flex items-center">
-                        <img class="w-8 h-8 rounded-full mr-2" src="petro.png" alt="Аватар Петра">
+                        <img class="w-8 h-8 rounded-full mr-2" src="images/petro.png" alt="Аватар Петра">
                         <span class="font-bold">Петро</span>
                     </div>
                     <span class="text-yellow-500 mb-2">⭐️⭐️⭐️⭐️⭐️</span>
@@ -264,7 +264,7 @@
             <div class="bg-white rounded-lg p-4">
                 <div class="flex flex-col">
                     <div class="flex items-center">
-                        <img class="w-8 h-8 rounded-full mr-2" src="olena2.png" alt="Аватар Марії">
+                        <img class="w-8 h-8 rounded-full mr-2" src="images/olena2.png" alt="Аватар Марії">
                         <span class="font-bold">Марія</span>
                     </div>
                     <span class="text-yellow-500 mb-2">⭐️⭐️⭐️⭐️⭐️</span>
@@ -282,24 +282,24 @@
     <br>
     <div class="order_steps_list1 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
         <div class="step_item bg-gray-100 shadow-md rounded-md p-6 relative border border-gray-300 ml-4">
-            <img src="contract.png" alt="Отримання Icon"
+            <img src="images/contract.png" alt="Отримання Icon"
                  style="width: 30px; height: 30px; display: block; margin: 0 auto;">
             <h4 class="font-bold mb-2 text-center">Заявка </h4>
             <p>Залишаєте заявку на нашому сайті</p>
         </div>
         <div class="step_item bg-gray-100 shadow-md rounded-md p-6 relative border border-gray-300 mr-4">
-            <img src="headphones.png" alt="Отримання Icon"
+            <img src="images/headphones.png" alt="Отримання Icon"
                  style="width: 30px; height: 30px; display: block; margin: 0 auto;">
             <h4 class="font-bold mb-2 text-center">Дзвінок </h4>
             <p>Менеджер уточнює деталі замовлення</p>
         </div>
         <div class="step_item bg-gray-100 shadow-md rounded-md p-6 relative border border-gray-300 ml-4">
-            <img src="box.png" alt="Отримання Icon" style="width: 30px; height: 30px; display: block; margin: 0 auto;">
+            <img src="images/box.png" alt="Отримання Icon" style="width: 30px; height: 30px; display: block; margin: 0 auto;">
             <h4 class="font-bold mb-2 text-center">Відправка </h4>
             <p class="">Новою Поштою протягом 1-3 днів</p>
         </div>
         <div class="step_item bg-gray-100 shadow-md rounded-md p-6 relative border border-gray-300 mr-4">
-            <img src="salary.png" alt="Отримання Icon"
+            <img src="images/salary.png" alt="Отримання Icon"
                  style="width: 30px; height: 30px; display: block; margin: 0 auto;">
             <h4 class="font-bold mb-2 text-center">Отримання </h4>
             <p>Оплачуєте при отриманні поштою</p>
@@ -317,12 +317,12 @@
             </div>
 
             <div class="flex justify-center items-center mb-4">
-                <img src="klass.png" alt="Иконка" class="mr-2 h-7">
+                <img src="images/klass.png" alt="Иконка" class="mr-2 h-7">
                 <p class="mb-2 text-gray-666">Якість підтверджено</p>
             </div>
 
             <div class="flex justify-center">
-                <img src="novaposhta.jpg" alt="Картинка" class="max-w-full h-auto">
+                <img src="images/novaposhta.jpg" alt="Картинка" class="max-w-full h-auto">
             </div>
         </form>
     </div>
@@ -409,5 +409,31 @@
         const header = document.getElementById('header');
         header.scrollIntoView({ behavior: 'smooth' });
     }
+
+    function validateForm(event) {
+        event.preventDefault(); // Отменяем отправку формы
+
+        var nameInput = document.getElementById("name");
+        var phoneInput = document.getElementById("phone");
+
+        // Проверяем валидность полей ввода
+        if (nameInput.value.trim() === "") {
+            nameInput.classList.add("border-red-500");
+            return false;
+        } else {
+            nameInput.classList.remove("border-red-500");
+        }
+
+        if (phoneInput.value.trim() === "") {
+            phoneInput.classList.add("border-red-500");
+            return false;
+        } else {
+            phoneInput.classList.remove("border-red-500");
+        }
+
+        // Если форма валидна, переходим на страницу thanks.html
+        window.location.href = "thanks.html";
+    }
+
 </script>
 </html>
