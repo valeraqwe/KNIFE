@@ -33,6 +33,7 @@ li.relative {
     box-shadow: none;
     background-color: #FFFFFF;
     border-radius: 8px 8px 0 0;
+    flex: 1;
 }
 
 .cost-delivery-list > div:first-child {
@@ -41,6 +42,14 @@ li.relative {
 
 .cost-delivery-list > div:last-child {
     border-radius: 0 8px 8px 0;
+}
+
+.wider-left {
+    margin-left: -20px;
+}
+
+.wider-right {
+    margin-right: -20px;
 }
 
 
