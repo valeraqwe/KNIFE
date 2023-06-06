@@ -117,6 +117,9 @@ li.relative {
     padding-bottom: 0;
 }
 
+.mb-2.text-gray-666 {
+    font-size: 15px; /* Измените значение на желаемый размер */
+}
 
 
 
