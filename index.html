@@ -45,7 +45,7 @@
 
     <!-- Форма для замовлення -->
     <div class="container mx-auto mt-6">
-        <form id="orderForm" class="max-w-4xl mx-auto" onsubmit="return validateForm(event)">
+        <form id="orderForm" class="max-w-4xl mx-auto">
             <div class="mb-6 ml-8 mr-8">
                 <label for="name"></label>
                 <input class="appearance-none border rounded w-full py-6 px-8 text-gray-700 placeholder-black leading-tight focus:outline-none focus:shadow-outline"
@@ -410,30 +410,18 @@
         header.scrollIntoView({ behavior: 'smooth' });
     }
 
-    function validateForm(event) {
-        event.preventDefault(); // Отменяем отправку формы
+    document.addEventListener("DOMContentLoaded", function() {
+        let orderForm = document.getElementById("orderForm");
+        orderForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Отменяем отправку формы по умолчанию
 
-        var nameInput = document.getElementById("name");
-        var phoneInput = document.getElementById("phone");
+            // Перенаправляем пользователя на страницу thanks.html
+            window.location.href = "thanks.html";
+        });
+    });
 
-        // Проверяем валидность полей ввода
-        if (nameInput.value.trim() === "") {
-            nameInput.classList.add("border-red-500");
-            return false;
-        } else {
-            nameInput.classList.remove("border-red-500");
-        }
 
-        if (phoneInput.value.trim() === "") {
-            phoneInput.classList.add("border-red-500");
-            return false;
-        } else {
-            phoneInput.classList.remove("border-red-500");
-        }
 
-        // Если форма валидна, переходим на страницу thanks.html
-        window.location.href = "thanks.html";
-    }
 
 </script>
 </html>
