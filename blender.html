@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>ФІРМОВИЙ НІМЕЦЬКИЙ РУЧНИЙ МІКСЕР</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thanks.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="min-h-screen flex flex-col">
+    <header class="bg-white text-center">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:flex-wrap mt-4">
+            <span class="text-black">ФІРМОВІ БЛЕНДЕРИ</span><br>
+            <span class="text-red-500">POWERMIX PRO</span><br>
+            <span class="text-black text-opacity-75">ваш помічник в кулінарних експериментах</span>
+        </h2>
+        <img src="images/blender.webp" alt="Blender" class="block mx-auto max-w-full h-auto">
+    </header>
+
+    <div class="container mx-auto px-4">
+        <section class="my-8">
+            <h3 class="text-2xl font-bold mb-4">Особливості блендерів PowerMix Pro:</h3>
+            <ul class="list-disc ml-6">
+                <li>Мотор потужністю 1000 Вт для швидкої обробки продуктів</li>
+                <li>5 швидкостей та пульсаційний режим для точного керування</li>
+                <li>Нержавіюча стальна леза для ефективного перемішування</li>
+                <li>Кришка з дозатором для зручного додавання інгредієнтів</li>
+                <li>Ємність 1,5 літра з вимірювальною шкалою</li>
+            </ul>
+        </section>
+
+        <section class="my-8">
+            <h3 class="text-2xl font-bold mb-4">Виберіть свій ідеальний блендер:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h4 class="text-xl font-bold mb-2">PowerMix Pro 1000</h4>
+                    <img src="images/blender.webp" alt="Blender 1" class="my-4 mx-auto max-w-full h-auto">
+                    <p>Блендер потужністю 1000 Вт з 5 швидкостями та пульсаційним режимом.</p>
+                    <p class="text-red-500 font-bold mt-4">Ціна: $99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h4 class="text-xl font-bold mb-2">PowerMix Pro 2000</h4>
+                    <img src="images/blender.webp" alt="Blender 2" class="my-4 mx-auto max-w-full h-auto">
+                    <p>Блендер потужністю 2000 Вт з 10 швидкостями та пульсаційним режимом.</p>
+                    <p class="text-red-500 font-bold mt-4">Ціна: $149</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h4 class="text-xl font-bold mb-2">PowerMix Pro 3000</h4>
+                    <img src="images/blender.webp" alt="Blender 3" class="my-4 mx-auto max-w-full h-auto">
+                    <p>Блендер потужністю 3000 Вт з 15 швидкостями та пульсаційним режимом.</p>
+                    <p class="text-red-500 font-bold mt-4">Ціна: $199</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container mx-auto mt-6">
+        <form id="orderForm" class="max-w-4xl mx-auto">
+            <div class="mb-6">
+                <label for="name" class="text-lg text-gray-800"></label>
+                <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 placeholder-gray-500 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500"
+                       id="name" type="text" placeholder="Введіть ваше ім'я" required>
+            </div>
+            <div class="mb-6">
+                <label for="phone" class="text-lg text-gray-800"></label>
+                <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 placeholder-gray-500 leading-tight focus:outline-none focus:ring-2 focus:ring-red-500"
+                       id="phone" type="tel" placeholder="Введіть номер телефону" required>
+            </div>
+            <div class="flex justify-center mt-8">
+                <button class="bg-blue-500 hover:bg-red-700 text-white font-bold py-4 px-8 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+                        type="submit">Зробити замовлення
+                </button>
+            </div>
+            <div class="flex justify-center items-center mt-5">
+                <img src="images/klass.png" alt="Иконка" class="mr-2 h-7">
+                <p class="text-gray-500">Якість підтверджено</p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
