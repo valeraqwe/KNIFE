@@ -127,22 +127,22 @@
         <ul class="list_4">
             <li>
                 <div class="text">
-                    <img src="images/qwe.jpg">
+                    <img src="images/qwe.jpg" alt="product1">
                 </div>
             </li>
             <li>
                 <div class="text">
-                    <img src="images/qwe2.jpg">
+                    <img src="images/qwe2.jpg" alt="product2">
                 </div>
             </li>
             <li>
                 <div class="text">
-                    <img src="images/img_1.png">
+                    <img src="images/img_1.png" alt="product3">
                 </div>
             </li>
             <li>
                 <div class="text">
-                    <img src="images/qwe3.jpg">
+                    <img src="images/qwe3.jpg" alt="product4">
                 </div>
             </li>
         </ul>
@@ -196,17 +196,17 @@
         </button>
     </div>
 
-    <section id="cost-delivery-section"  class="section col-span-full bg-gray-100">
+    <section id="cost-delivery-section" class="section col-span-full bg-gray-100">
         <div class="cost-delivery-title decor col-span-full text-center text-2xl font-bold mb-6 mt-4">Швидкість доставки
         </div>
         <div class="cost-delivery-list">
             <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center ml-4 wider-left">
                 <img src="images/logo_ukrposhta.png" alt="Ukrposhta Logo" class="w-24 h-auto mb-6">
-                <h3 class="text-xl font-semibold mb-2">3-6 днів</h3>
+                <h3 class="text-xl font-semi-bold mb-2">3-6 днів</h3>
             </div>
             <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center mr-4 wider-right">
                 <img src="images/logo_novaposhta.png" alt="Nova Poshta Logo" class="w-24 h-auto mb-6">
-                <h3 class="text-xl font-semibold mb-2">1-2 днів</h3>
+                <h3 class="text-xl font-semi-bold mb-2">1-2 днів</h3>
             </div>
         </div>
     </section>
@@ -242,7 +242,8 @@
                 <p class="text-gray-700">Набір ножів барбекю - це просто відмінність! Легкі в руці, зручні
                     використовувати і дуже гострі.</p>
                 <div class="text-gray-500 mt-2">Місто: Львів</div>
-              images/  <div class="text-gray-500">Написано 5 днів тому</div>
+                images/
+                <div class="text-gray-500">Написано 5 днів тому</div>
             </div>
 
             <!-- Отзыв 3 -->
@@ -294,7 +295,8 @@
             <p>Менеджер уточнює деталі замовлення</p>
         </div>
         <div class="step_item bg-gray-100 shadow-md rounded-md p-6 relative border border-gray-300 ml-4">
-            <img src="images/box.png" alt="Отримання Icon" style="width: 30px; height: 30px; display: block; margin: 0 auto;">
+            <img src="images/box.png" alt="Отримання Icon"
+                 style="width: 30px; height: 30px; display: block; margin: 0 auto;">
             <h4 class="font-bold mb-2 text-center">Відправка </h4>
             <p class="">Новою Поштою протягом 1-3 днів</p>
         </div>
@@ -407,21 +409,18 @@
 
     function scrollToHeader() {
         const header = document.getElementById('header');
-        header.scrollIntoView({ behavior: 'smooth' });
+        header.scrollIntoView({behavior: 'smooth'});
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         let orderForm = document.getElementById("orderForm");
-        orderForm.addEventListener("submit", function(event) {
+        orderForm.addEventListener("submit", function (event) {
             event.preventDefault(); // Отменяем отправку формы по умолчанию
 
             // Перенаправляем пользователя на страницу thanks.html
             window.location.href = "thanks.html";
         });
     });
-
-
-
 
 </script>
 </html>
